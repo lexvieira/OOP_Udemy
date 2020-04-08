@@ -67,7 +67,12 @@ It depends on the needs requirements etc. But that is the purpose of the abstrac
 We already know this part.
 So this is just a refresher interfaces on the other hand are made to be completely abstract and their
 purpose is to provide with an ability to unrelated group of classes.
-
+>>>>
+Interfaces When to use
+And our salesman is an abstract class so we have came back to our original state that we started from.
+But the reason why I wanted to do a quick rewrite is just to show you that it was not the correct tool
+for our situation.
+So that then we can see when is the right time to use an interface.
 
 
 
