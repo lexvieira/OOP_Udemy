@@ -4,11 +4,23 @@ namespace OOP
 {
     public class RetailSalesPerson : Salesman
     {
-        public RetailSalesPerson(string firstName, string lastName) : base(firstName, lastName)
-        {
+
+        private string _firstName;
+
+        private string _lastname;
+
+        public string FullName{
+            get {
+                return string.Format("{0} {1}", this._firstName, this._lastname);
+            }
+        }        
+
+        public RetailSalesPerson(string firstName, string lastName){
+            this._firstName = firstName;
+            this._lastname = lastName;
         }
 
-        public override void Sell()
+        public void Sell()
         {
             Console.WriteLine(String.Format("HI my name is {0}. I would recommend you to buy this pen", this.FullName));
         }
