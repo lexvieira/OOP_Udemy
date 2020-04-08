@@ -29,3 +29,45 @@ We set those in the child class.
 An example would be H So if we have age or anything else in this case I just mentioned age.
 So if we say in age and this doesn't really go anywhere but we needed for our child class then we would
 >>>>
+
+>>INTERFACES
+https://www.udemy.com/course/beginner-object-oriented-programming-in-csharp-and-dotnet-core/learn/lecture/10716612#notes
+>>>>
+You can think of an interface as an abstract class that only has abstract methods and properties.
+Interfaces do not have constructors or fields on them so they don't have a constructor.
+They don't have fields.
+>>>>
+Now the question that might arise naturally is this Why in the world would we have interfaces if we
+already have abstract classes then we can make them act as an interface.
+This is an amazing question and one worth asking.
+Also one quick invention you inherit from classes would you implement an interface.
+Once again this is just a convention.
+But at the end of the day it is just how you referred to an abstract class.
+Inheritance versus interface inheritance.
+But on the back end inheritance gets performed the same exact way for an abstract class or an interface
+which is via a common symbol.
+>>>>
+But back to the question why do we have interfaces basically interfaces were made to get around the
+lack of multiple inheritances in C sharp.
+So that means that you cannot inherit from more than one class 
+but you can implement multiple interfaces.
+>>>>
+
+>>>>
+,SalesmanLittle
+/*
+    It says class car salesman cannot have multiple base classes.
+    And that's because we cannot inherit from multiple classes.
+*/
+
+>>>> Abstract Classes vs Interfaces
+As we saw in the previous videos some of the functionality as you know can be predefined and the rest
+of it can be abstract or virtual.
+It depends on the needs requirements etc. But that is the purpose of the abstract class.
+We already know this part.
+So this is just a refresher interfaces on the other hand are made to be completely abstract and their
+purpose is to provide with an ability to unrelated group of classes.
+
+
+
+
