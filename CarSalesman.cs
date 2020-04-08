@@ -2,11 +2,7 @@ using System;
 
 namespace OOP
 {
-    public class CarSalesman : Salesman, SalesmanLittle
-    /*
-        It says class car salesman cannot have multiple base classes.
-        And that's because we cannot inherit from multiple classes.
-    */
+    public class CarSalesman : Salesman
     {
         public CarSalesman(string firstName, string lastName) : base(firstName, lastName)
         {
