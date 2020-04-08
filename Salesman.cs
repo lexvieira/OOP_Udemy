@@ -27,9 +27,7 @@ namespace OOP
             this._lastname = lastName;
         }
 
-        public virtual void Sell(){
-            Console.WriteLine(String.Format("HI my name is {0}. I would recommend you to buy this car", this.FullName));            
-        }
+        public abstract void Sell();
         
     }
 }
