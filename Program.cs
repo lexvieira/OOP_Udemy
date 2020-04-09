@@ -10,7 +10,9 @@ namespace OOP
             mike.Code();
             mike.Code("C#");
             mike.Code("C#","HTML");
-            mike.Code(null,"HTML");
+            mike.Code("HTML", 8);
+            mike.Code(8, "VB");            
+            
         }
     }
 }
