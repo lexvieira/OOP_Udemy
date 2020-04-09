@@ -76,3 +76,6 @@ So that then we can see when is the right time to use an interface.
 
 
 
+>>>> Polymorphism <<<<
+
+    
