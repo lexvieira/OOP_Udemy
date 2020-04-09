@@ -41,7 +41,7 @@ namespace OOP
             So it's a three ways in which we can differentiate it.
             The amount to types and the order in which they're placed OK.      
 
-            On the back end we're using static polymorphism in order to clean up our code.
+            On the back end we're using static polymorphism in order to clean up our code. 
 
         */
     }
