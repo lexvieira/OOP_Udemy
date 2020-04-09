@@ -2,7 +2,10 @@ using System;
 
 namespace OOP
 {
-    public class RetailSalesPerson : Salesman
+    public class RetailSalesPerson : Salesman, SellDeveloping //Regulation with Interface
+    /* But when we enforce it with an interface and then we mess with the method again see we get regulation in place.
+       So that is the beauty of interfaces and also the fact that it gets around the problem of multiple inheritance in C sharp.
+    */
     {
         public RetailSalesPerson(string firstName, string lastName) : base(firstName, lastName)
         {
