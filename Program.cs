@@ -6,17 +6,15 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            CarSalesman steveTheSalesMan = new CarSalesman("Steve", "Rogers");
-            Console.WriteLine(steveTheSalesMan.FullName);
-            steveTheSalesMan.Sell();
 
-            RetailSalesPerson erikTheSalesDude = new RetailSalesPerson("Erik","Erickson");
-            Console.WriteLine(erikTheSalesDude.FullName);
-            erikTheSalesDude.Sell();
 
             RetailSalesPerson johnTheSalesDude = new RetailSalesPerson("John","Doe");
             Console.WriteLine(johnTheSalesDude.FullName);
-            erikTheSalesDude.Sell();            
+            johnTheSalesDude.Sell();            
+
+            WebDeveloper mike = new WebDeveloper("Angular 6");
+            mike.Code();
+            mike.Develop();
         }
     }
 }
