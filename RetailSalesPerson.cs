@@ -2,19 +2,20 @@ using System;
 
 namespace OOP
 {
-    public class RetailSalesPerson : Salesman, SellDeveloping
+    public class RetailSalesPerson : Salesman
     {
         public RetailSalesPerson(string firstName, string lastName) : base(firstName, lastName)
         {
         }
 
-        public void Develop()
-        {
-            Console.WriteLine("I develop myself by writting retail sales training videos");
-            /*
-                we can't do it we can't mess with the signature we can't touch this method well we can't change is
-            */
-        }
+        //Messing Everthing Removing a important part of the code
+        // public void Develop()
+        // {
+        //     Console.WriteLine("I develop myself by writting retail sales training videos");
+        //     /*
+        //         we can't do it we can't mess with the signature we can't touch this method well we can't change is
+        //     */
+        // }
 
         public override void Sell()
         {
