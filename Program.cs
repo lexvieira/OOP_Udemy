@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace OOP
 {
@@ -6,22 +7,32 @@ namespace OOP
     {
         static void Main(string[] args)
         {
+            List<Object> salesman = new List<object> {new CarSalesman("James", "Weaver"), new CarSalesman("Felipe", "Brawn"), new RetailSalesPerson("Daphine", "Storm")};
 
-            Salesman carSalesman1 = new CarSalesman("James", "Weaver");
-            carSalesman1.Sell();
+            foreach(var item in salesman){
+                showmeHowToSell(item);
+            }
 
-            CarSalesman carSalesman2 = new CarSalesman("Felipe", "Brawn");
-            carSalesman2.Sell();
+            Console.WriteLine("Exiting Program :)");
+        }
 
-            Salesman retailSalesman1 = new RetailSalesPerson("Daphine", "Storm");
-            retailSalesman1.Sell();
+        static void showmeHowToSell(Object salesman)
+        {
+            if (salesman is CarSalesman){
+                CarSalesman carSalesman = (CarSalesman) salesman;
+                carSalesman.Sell();
+            }
+            else
+            {
+                RetailSalesPerson retailSalesPerson = (RetailSalesPerson) salesman;
+                retailSalesPerson.Sell();
+            }
 
-        /*
-            There's a base class for everything in C sharp so we can take advantage of that and say hey our list
-            can take anything including salesman shop classes or any other type.
-            It's all inclusive.
-        */
-
+            /*
+                salesman.GetType()
+                salesman is Carlesman
+                salesman is RetailSalesPerson
+            */
         }
     }
 }
