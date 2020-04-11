@@ -7,13 +7,13 @@ namespace OOP
         static void Main(string[] args)
         {
 
-            CarSalesman carSalesman1 = new CarSalesman("James", "Weaver");
+            Salesman carSalesman1 = new CarSalesman("James", "Weaver");
             carSalesman1.Sell();
 
             CarSalesman carSalesman2 = new CarSalesman("Felipe", "Brawn");
             carSalesman2.Sell();
 
-            RetailSalesPerson retailSalesman1 = new RetailSalesPerson("Daphine", "Storm");
+            Salesman retailSalesman1 = new RetailSalesPerson("Daphine", "Storm");
             retailSalesman1.Sell();
 
         /*
