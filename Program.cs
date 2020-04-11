@@ -7,7 +7,7 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            List<Object> salesman = new List<object> {new CarSalesman("James", "Weaver"), new CarSalesman("Felipe", "Brawn"), new RetailSalesPerson("Daphine", "Storm")};
+            List<Object> salesman = new List<object> {new CarSalesman("James", "Weaver"), new CarSalesman("Felipe", "Brawn"), new RetailSalesPerson("Daphine", "Storm"), new InsuranceBroker("Alex", "Lima")};
 
             foreach(var item in salesman){
                 showmeHowToSell(item);
@@ -22,14 +22,20 @@ namespace OOP
                 CarSalesman carSalesman = (CarSalesman) salesman;
                 carSalesman.Sell();
             }
-            else
+            else if (salesman.GetType() == typeof(OOP.RetailSalesPerson))
             {
                 RetailSalesPerson retailSalesPerson = (RetailSalesPerson) salesman;
                 retailSalesPerson.Sell();
             }
+            else
+            {
+                InsuranceBroker insuranceBroker = (InsuranceBroker) salesman;
+                insuranceBroker.Sell();
+            } 
 
             /*
                 salesman.GetType()
+                salesman.GetType() == typeof(OOP.CarSalesman)
                 salesman is Carlesman
                 salesman is RetailSalesPerson
             */
