@@ -6,13 +6,22 @@ namespace OOP
     {
         static void Main(string[] args)
         {
-            WebDeveloper mike = new WebDeveloper("Angular 6");
-            mike.Code();
-            mike.Code("C#");
-            mike.Code("C#","HTML");
-            mike.Code("HTML", 8);
-            mike.Code(8, "VB");            
-            
+
+            CarSalesman carSalesman1 = new CarSalesman("James", "Weaver");
+            carSalesman1.Sell();
+
+            CarSalesman carSalesman2 = new CarSalesman("Felipe", "Brawn");
+            carSalesman2.Sell();
+
+            RetailSalesPerson retailSalesman1 = new RetailSalesPerson("Daphine", "Storm");
+            retailSalesman1.Sell();
+
+        /*
+            There's a base class for everything in C sharp so we can take advantage of that and say hey our list
+            can take anything including salesman shop classes or any other type.
+            It's all inclusive.
+        */
+
         }
     }
 }
