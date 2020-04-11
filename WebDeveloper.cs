@@ -25,6 +25,12 @@ namespace OOP
             Since anybody making a child class in inheriting from the base class which has an abstract method would
             have to define that method in our case there are no rules to regulate as to which class has to have
             self development ability.
+
+            Static Polymorphism is using method overloading and Dynamic Polymorphism is using 
+            method overriding.
+            This is the right answer because Static Polymorphism is using method overloading 
+            within each class and Dynamic Polymorphism is using method overriding in many classes
+             inheriting from a base class such as an Abstract Class or an Interface.
         */
 
     }

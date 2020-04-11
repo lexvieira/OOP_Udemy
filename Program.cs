@@ -8,10 +8,19 @@ namespace OOP
         static void Main(string[] args)
         {
             List<Salesman> salesman = new List<Salesman> {new CarSalesman("James", "Weaver"), new CarSalesman("Felipe", "Brawn"), new RetailSalesPerson("Daphine", "Storm"), new InsuranceBroker("Alex", "Lima"), new OnlineMaraketer("Steve", "Rogers")};
-            //Change the Object type to Salesman
             foreach(var item in salesman){
                 showmeHowToSell(item);
             }
+
+            List<SellDeveloping> sellDeveloping = new List<SellDeveloping> {new RetailSalesPerson("Daphine", "Storm"), new WebDeveloper("C#")};
+            /*SellDeveloping instead a Object 
+                This can get into it just as simply but if we put self developing interface what this does is it creates
+                a regulation it creates boundaries around what can get into this list and what can not get into this list.
+            */
+            foreach(var item in sellDeveloping){
+                showMeHowYouSelfDevelop(item);
+            }
+
 
             Console.WriteLine("Exiting Program :)");
         }
@@ -34,5 +43,30 @@ namespace OOP
               call its sell method.
             */
         }
+
+        static void showMeHowYouSelfDevelop(SellDeveloping sellDeveloping)
+        {
+            sellDeveloping.Develop();
+        }
+
+        /*
+            Dynamic Polymorphism
+            For example when we have an abstract method in an abstract class and we inherit from the abstract class
+            it it forces us to overwrite it and have our own definition.
+            If we don't do it the program won't run.
+            This is a great reminder which introduces stability and regulation into our program.
+            Since anybody making a child class in inheriting from the base class which has an abstract method would
+            have to define that method in our case there are no rules to regulate as to which class has to have
+            self development ability.
+
+            Static Polymorphism is using method overloading and Dynamic Polymorphism is using 
+            method overriding.
+            This is the right answer because Static Polymorphism is using method overloading 
+            within each class and Dynamic Polymorphism is using method overriding in many classes
+            inheriting from a base class such as an Abstract Class or an Interface.
+
+            https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java
+        */
+
     }
 }
