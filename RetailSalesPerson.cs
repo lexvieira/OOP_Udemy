@@ -11,7 +11,8 @@ namespace OOP
        It is a process of creating a new object from an existing object and gaining access to their classes members.
        
        Abstract Classes are used for... Interfaces are used for...
-       Abstract Classes are used for grouping related group of classes and uniting their functionality in one place and Interfaces are used for grouping unrelated group of classes.
+       Abstract Classes are used for grouping related group of classes and uniting their functionality in one place 
+       and Interfaces are used for grouping unrelated group of classes.
     */
     {
         public RetailSalesPerson(string firstName, string lastName) : base(firstName, lastName)
