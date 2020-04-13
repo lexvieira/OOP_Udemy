@@ -95,3 +95,13 @@ That's all.
 >>>> Exercise Encapsulation <<<<
 
 Create a simple Goto Work!
+
+>>>> Encapsulation - Public <<<<
+
+    6:43 - This is public.
+    So another class so a program.
+    This is a class was able to use cell.
+    So it was able to access cell from its own method which is Maine and the Maine is just kind of like
+    be accessed from within and from the outside classes.
+
+    
