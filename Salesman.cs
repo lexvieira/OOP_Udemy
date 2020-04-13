@@ -28,6 +28,18 @@ namespace OOP
         }
 
         public abstract void Sell();
+
+        protected abstract void Engage();
+
+        protected abstract void EstablishTrust();        
+
+        protected abstract void AddressConcerns();        
+
+        protected abstract void DemoValue();        
+
+        protected abstract void Close();        
+
+
         
     }
 }

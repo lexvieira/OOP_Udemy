@@ -104,4 +104,18 @@ Create a simple Goto Work!
     So it was able to access cell from its own method which is Maine and the Maine is just kind of like
     be accessed from within and from the outside classes.
 
-    
+>>>> Encapsulation - Protected <<<<
+
+0:55 - Projetect Abstract
+
+7:38 - 
+    So we'll talk about privacy in the next video but that's what protected is is just says that it can
+    be used from within the class and it can be used from any class that inherits the class that it sent.
+    So in this case it's exactly what's happening.
+    But the outside world cannot access it.
+
+>>>> Calling Protected Class <<<<
+
+>>>> Encapsulation - Private <<<<
+
+1:50

@@ -35,6 +35,29 @@ namespace OOP
             howIGoToWork.StartDriving();
 
             Console.WriteLine("Exiting Program :)");
+
+
+            
+            //Access Public Method 
+            RetailSalesPerson retailSalesPerson = new RetailSalesPerson("Steve","Jobs");
+            retailSalesPerson.Sell();
+
+            CarSalesman carSalesman = new CarSalesman("Steve","Lee");
+            carSalesman.Sell();
+
+
+            /*
+                Just like in the diagram that we saw in the previous video the public axis specifies says that if we
+                make any method field property etc. public then it can be used from within the class and from the outside
+                of the class.
+                So in other words any object has access to it before even going over the other axis specifies.
+                I want to propose a hypothetical problem.
+
+                So another class so a program (main class).
+                This is a class was able to use cell.
+                So it was able to access cell from its own method which 
+                is Main and the Main is just kind of like the entry point into the whole application.
+            */
         }
 
         static void showmeHowToSell(Salesman salesman)
@@ -79,6 +102,7 @@ namespace OOP
 
             https://stackoverflow.com/questions/20783266/what-is-the-difference-between-dynamic-and-static-polymorphism-in-java
         */
+
 
     }
 }
