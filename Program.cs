@@ -22,6 +22,18 @@ namespace OOP
             }
 
 
+            HowIGoToWork howIGoToWork = new HowIGoToWork("Alex", "Viera", 7);
+
+            howIGoToWork.WakeUp();
+
+            howIGoToWork.BrushMyTeeth();
+
+            howIGoToWork.Workout();
+
+            howIGoToWork.GetIntoMyCar();
+
+            howIGoToWork.StartDriving();
+
             Console.WriteLine("Exiting Program :)");
         }
 

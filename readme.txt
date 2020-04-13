@@ -87,3 +87,11 @@ So that then we can see when is the right time to use an interface.
 >>>> Polymorphism using Interfaces <<<<
 
 >>>> Encapsulation <<<<
+
+The simplest way to think of encapsulation is to think of it as a protective shield that prevents the
+data from being accessed by the code outside the shield.
+That's all.    
+
+>>>> Exercise Encapsulation <<<<
+
+Create a simple Goto Work!
